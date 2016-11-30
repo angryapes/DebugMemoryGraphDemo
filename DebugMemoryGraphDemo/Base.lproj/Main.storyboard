@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DebugMemoryGraphDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7E6-Bz-LW9">
+                                <rect key="frame" x="164" y="318" width="46" height="30"/>
+                                <state key="normal" title="下一页"/>
+                                <connections>
+                                    <segue destination="nCX-QJ-Mg2" kind="presentation" id="yIv-5a-aSC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7E6-Bz-LW9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4HL-QH-Zx7"/>
+                            <constraint firstItem="7E6-Bz-LW9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bqy-eb-mKo"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="vHA-PW-txT">
+            <objects>
+                <viewController id="nCX-QJ-Mg2" customClass="SecondViewController" customModule="DebugMemoryGraphDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UTL-Jv-eda"/>
+                        <viewControllerLayoutGuide type="bottom" id="WK5-m6-dJy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BAk-rv-Buk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="baP-C9-pup">
+                                <rect key="frame" x="171.5" y="318" width="31" height="30"/>
+                                <state key="normal" title="返回"/>
+                                <connections>
+                                    <segue destination="QBW-TG-vID" kind="unwind" unwindAction="backWithSegue:" id="Okd-IJ-a2b"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="baP-C9-pup" firstAttribute="centerX" secondItem="BAk-rv-Buk" secondAttribute="centerX" id="IOY-zj-Y3U"/>
+                            <constraint firstItem="baP-C9-pup" firstAttribute="centerY" secondItem="BAk-rv-Buk" secondAttribute="centerY" id="hq6-hy-bv7"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vfr-45-6qk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="QBW-TG-vID" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="983" y="127"/>
+        </scene>
+    </scenes>
+</document>
